@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: AjpPjvVdSGY+9mmHD+5o6t1b1jw3i8lMpmueFpdTElvJGIFdRUY/t22URcBgfFZVnwpELS5MCPD9aNFlraK6RNoXlIt4FPDozi0bLYogrGbGRAf9Ljl/KGDfsnafzF4fm8LqxB9/955aKtZY7vqjpm+RxqUl6hcr7fO/Xxr1yOqH/nlAwwswA8Z6mvtv3TkjKWmXmtBC/nMRvyVRh9FCvgTKsqwVz1Yi1ovvM8zUeLBvJD5uWB0GfKS50JdEOrFmLHUa/QFhWEBgc3ZDNJBvosWH3B9xne6w3cdocejlKNdyECgX1ngBQJ/jKhzZDEgMWNU2vsV+fUWCXTeRy1Pwe1+x+A1C65biRhI4/xFJ2fTBzBSIH+S1onVCSKyEEt08kvdR61Y2cyom2sFu7wxk4gZ3JX7EuysYnJuG1ytu0Qv7ZliJ5IoNYQlaE8q59RczpnqdsL/zc5uqYrMAZQ7N9vTpaNs06PSEtTC4Gf707M5sEtmTnAfHkQb0Wdi9P8PlbXiIW/DCQQWTaM7JkiqXOggtT2hkK5RpgQXrNNSW7Img3l78WrURuBgktaNzWvda66Ll60VnnZpWsm1Ud6e3LMiHxSDZfmI89EFqkswhWkK1asp2e3P01ORwb8ops9GhXERbLVGH1VZRbJhkmh6tKEa54QhhbbTxQMVUw1EfJuc=
+  app: https://salty-depths-84159.herokuapp.com/
+  on:
+    repo: huntermotte/node-shopping-list-integration-tests
