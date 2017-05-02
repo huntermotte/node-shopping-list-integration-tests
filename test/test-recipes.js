@@ -21,7 +21,7 @@ describe('Recipes', function() {
     .then(function(res) {
       res.should.have.status(200);
       res.should.be.json;
-      res.should.be.a('array');
+      res.body.should.be.a('array');
       res.body.should.have.length.of.at.least(1);
       res.body.forEach(function(item) {
         item.should.be.a('object');
@@ -49,7 +49,7 @@ describe('Recipes', function() {
 
   it('should update recipes on PUT', function() {
     const updateRecipe = {
-      name: salad, ingredients: ['lettuce', 'dressing', 'croutons']
+      name: 'salad', ingredients: ['lettuce', 'dressing', 'croutons']
     };
     return chai.request(app)
     .get('/recipes')
