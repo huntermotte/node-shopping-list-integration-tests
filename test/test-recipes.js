@@ -12,7 +12,7 @@ describe('Recipes', function() {
   });
 
   after(function() {
-    return closeServer;
+    return closeServer();
   });
 
   it('should return recipes on GET', function() {
@@ -71,7 +71,7 @@ describe('Recipes', function() {
 
   it('should delete recipes on DELETE', function() {
     return chai.request(app)
-    .get('recipes')
+    .get('/recipes')
     .then(function(res) {
       return chai.request(app)
       .delete(`/recipes/${res.body[0].id}`)
