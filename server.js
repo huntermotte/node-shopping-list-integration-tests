@@ -33,7 +33,7 @@ let server;
 // In our test code, we need a way of asynchronously starting
 // our server, since we'll be dealing with promises there.
 function runServer() {
-  const port = process.env.PORT || 8080;
+  const port = process.env.PORT || 2020;
   return new Promise((resolve, reject) => {
     server = app.listen(port, () => {
       console.log(`Your app is listening on port ${port}`);
